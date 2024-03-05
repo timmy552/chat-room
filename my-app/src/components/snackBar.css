@@ -1,0 +1,49 @@
+.snackbar{
+    display: flex;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.snackbar .symbol{
+    flex: 20%;
+    align-content: center;
+    text-align: center;
+}
+.snackbar .message{
+    flex: 80%;
+    padding-top: 20px;
+    align-content: center;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#show{
+    visibility: visible;
+    animation: fadeIn 1s, fadeOut 0.5s 2.5s;
+}
+#hide{
+    visibility: hidden;
+}
+
+@keyframes fadeIn {
+    from {
+       bottom : 0;
+       opacity: 0
+    }
+    to {
+       bottom : 30px;
+       opacity: 1
+    }
+    
+}
+@keyframes fadeOut {
+    from {
+       bottom : 30px;
+       opacity: 1
+    }
+    to {
+       bottom : 0;
+       opacity: 0
+    }
+    
+}
